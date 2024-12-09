@@ -40,6 +40,7 @@ class MainActivity : ComponentActivity() {
 
 
 
+
                     )
                 }
             }
@@ -49,7 +50,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(name: String, modifier: Modifier = Modifier.background(Color(0xff95fe95))
+) {
     var horizontalAlignment = Layout.Alignment.entries
     Modifier.background(Color(0xff95fe95))
 
@@ -80,6 +82,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             text = "您的成績 0 分",
             modifier = modifier
         )
+
     }
     val activity = (LocalContext.current as? Activity)
 
